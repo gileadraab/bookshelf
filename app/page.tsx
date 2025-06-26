@@ -143,7 +143,9 @@ export default function HomePage() {
             <div className="text-center mb-6 md:mb-8 px-2">
               <div className="flex items-center justify-center gap-2 md:gap-3 mb-3 md:mb-4">
                 <Book className="w-6 h-6 md:w-8 md:h-8 text-amber-700" />
-                <h1 className="text-2xl md:text-4xl font-bold text-amber-900 font-serif">
+                <h1
+                  className={`text-3xl md:text-5xl font-normal text-amber-900 ${alexBrush.className}`}
+                >
                   Bookshelf
                 </h1>
               </div>
