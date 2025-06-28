@@ -1,4 +1,4 @@
-![Logo](public/images/Bookshelf.png)
+![Logo](public/images/bookshelf-removedbg.png)
 
 A beautiful, minimalist reading tracker to organize and rate your book collection. Built with Next.js and featuring a warm, retro design inspired by classic libraries.
 
