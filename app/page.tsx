@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Plus, Book, Star, Edit, Trash2 } from "lucide-react";
+import { Plus, Star, Edit, Trash2 } from "lucide-react";
 import { AddBookDialog } from "@/components/add-book-dialog";
 import { BookDetailDialog } from "@/components/book-detail-dialog";
 import { EditBookDialog } from "@/components/edit-book-dialog";
@@ -98,9 +98,8 @@ export default function HomePage() {
               {/* Header */}
               <div className="text-center mb-6 md:mb-8 px-2">
                 <div className="flex items-center justify-center gap-2 md:gap-3 mb-3 md:mb-4">
-                  <Book className="w-6 h-6 md:w-8 md:h-8 text-amber-700" />
                   <h1
-                    className={`text-3xl md:text-5xl font-normal text-amber-900 ${alexBrush.className}`}
+                    className={`text-5xl md:text-5xl font-normal text-amber-900 ${alexBrush.className}`}
                   >
                     Bookshelf
                   </h1>
@@ -142,9 +141,8 @@ export default function HomePage() {
             {/* Header for when there are books */}
             <div className="text-center mb-6 md:mb-8 px-2">
               <div className="flex items-center justify-center gap-2 md:gap-3 mb-3 md:mb-4">
-                <Book className="w-6 h-6 md:w-8 md:h-8 text-amber-700" />
                 <h1
-                  className={`text-3xl md:text-5xl font-normal text-amber-900 ${alexBrush.className}`}
+                  className={`text-5xl md:text-5xl font-normal text-amber-900 ${alexBrush.className}`}
                 >
                   Bookshelf
                 </h1>
