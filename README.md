@@ -21,20 +21,21 @@ A beautiful, minimalist reading tracker to organize and rate your book collectio
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
-   git clone https://github.com/yourusername/bookshelf.git
+   ```bash
+   git clone https://github.com/gileadraab/bookshelf.git
    cd bookshelf
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Run the development server**
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
+
 
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
