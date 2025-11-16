@@ -1,70 +1,130 @@
 ![Logo](public/images/Bookshelf.png)
 
-A beautiful, minimalist reading tracker to organize and rate your book collection. Built with Next.js and featuring a warm, retro design inspired by classic libraries.
+# Bookshelf - Android Reading Tracker
+
+A beautiful, minimalist reading tracker to organize and rate your book collection. Built for Android with Java, featuring a warm, retro design inspired by classic libraries.
 
 ## ✨ Features
 
 - **📖 Book Management** - Add, edit, and delete books from your collection
 - **⭐ Rating System** - Rate books from 1-10 with an intuitive star interface
 - **💭 Personal Notes** - Add comments and thoughts about each book
-- **📱 Mobile-First Design** - Optimized for all devices with responsive layout
+- **📱 Mobile-First Design** - Optimized for Android devices with responsive layouts
 - **🎨 Retro Aesthetic** - Warm amber tones with vintage book illustrations
-- **💾 Local Storage** - Your data persists locally in your browser
-- **🚀 Fast & Lightweight** - Built with modern web technologies
+- **💾 Local Database** - Your data persists locally using Room Database
+- **🚀 Fast & Lightweight** - Built with native Android technologies
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
-- npm or yarn
+- Android Studio Arctic Fox or newer
+- JDK 8 or higher
+- Android SDK with minimum API 24 (Android 7.0)
 
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
-   git clone https://github.com/yourusername/bookshelf.git
+   ```bash
+   git clone https://github.com/gileadraab/bookshelf.git
    cd bookshelf
-   \`\`\`
+   ```
 
-2. **Install dependencies**
-   \`\`\`bash
-   npm install
-   \`\`\`
+2. **Open in Android Studio**
+   - Open Android Studio
+   - Select "Open an Existing Project"
+   - Navigate to the cloned directory and select it
 
-3. **Run the development server**
-   \`\`\`bash
-   npm run dev
-   \`\`\`
+3. **Sync Gradle**
+   - Android Studio will automatically prompt to sync Gradle
+   - Wait for the sync to complete
 
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+4. **Run the app**
+   - Connect an Android device or start an emulator
+   - Click the "Run" button (green play icon)
+   - Select your target device
 
 ## 🛠️ Built With
 
-- **[Next.js 15](https://nextjs.org/)** - React framework
-- **[React 19](https://react.dev/)** - UI library
-- **[TypeScript](https://www.typescriptlang.org/)** - Type safety
-- **[Tailwind CSS](https://tailwindcss.com/)** - Styling
-- **[shadcn/ui](https://ui.shadcn.com/)** - UI components
-- **[Lucide React](https://lucide.dev/)** - Icons
-- **[Google Fonts](https://fonts.google.com/)** - Alex Brush typography
+- **Java** - Primary programming language
+- **Android SDK** - Android development framework
+- **Material Components** - UI components following Material Design
+- **Room Database** - Local data persistence
+- **RecyclerView** - Efficient list display
+- **CardView** - Card-based UI elements
+- **Gradle** - Build system
 
-## 📱 Mobile-First Design
+## 📱 Architecture
 
-Bookshelf is designed with mobile users in mind:
+### Project Structure
+```
+app/src/main/
+├── java/com/bookshelf/
+│   ├── MainActivity.java          # Main screen with book list
+│   ├── model/
+│   │   └── Book.java              # Book data model
+│   ├── database/
+│   │   ├── BookDatabase.java      # Room database
+│   │   └── BookDao.java           # Database operations
+│   ├── adapter/
+│   │   └── BookAdapter.java       # RecyclerView adapter
+│   └── ui/
+│       ├── AddEditBookDialog.java # Add/Edit dialog
+│       └── BookDetailDialog.java  # Book detail view
+└── res/
+    ├── layout/                     # XML layouts
+    ├── values/                     # Colors, strings, themes
+    └── drawable/                   # Vector graphics & icons
+```
 
-- **Touch-friendly interface** with large tap targets
-- **Responsive grid layout** that adapts to screen size
-- **Full-screen dialogs** for better mobile experience
-- **Optimized typography** for readability on small screens
-- **Gesture-friendly navigation** with intuitive interactions
+### Data Model
+Books are stored with the following properties:
+- **id**: Auto-generated unique identifier
+- **title**: Book title (required)
+- **author**: Author name (required)
+- **rating**: 0-10 star rating
+- **comment**: Optional personal notes
+- **dateAdded**: Date when book was added
+
+### UI Components
+- **MainActivity**: Displays books in a single-column list
+- **AddEditBookDialog**: Full-screen dialog for adding/editing books
+- **BookDetailDialog**: Full-screen dialog showing book details
+- **BookAdapter**: Manages book cards in RecyclerView with click handlers
 
 ## 🎨 Design Philosophy
 
 - **Minimalist Interface** - Focus on your books, not the UI
-- **Warm Color Palette** - Amber and orange tones for a cozy feel
-- **Vintage Inspiration** - Classic library aesthetics
-- **Thoughtful Spacing** - Generous whitespace for visual comfort
+- **Warm Color Palette** - Amber and orange gradient backgrounds
+- **Vintage Inspiration** - Classic library aesthetics with book illustrations
+- **Thoughtful Spacing** - Generous padding for visual comfort
+- **Single Column Layout** - One book per row for easy reading
 
+## 📖 Development
+
+### Building the Project
+```bash
+./gradlew build
+```
+
+### Running Tests
+```bash
+./gradlew test
+```
+
+### Creating a Release Build
+```bash
+./gradlew assembleRelease
+```
+
+## 🔧 Configuration
+
+The app uses the following Gradle configuration:
+- **Compile SDK**: 34 (Android 14)
+- **Min SDK**: 24 (Android 7.0)
+- **Target SDK**: 34 (Android 14)
+
+## 📝 License
+
+This project is open source and available for personal use.
 
 **Happy Reading!** 📚✨
