@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Small book illustration for bottom of screen -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="72dp"
+    android:viewportWidth="96"
+    android:viewportHeight="72">
+
+    <!-- Stack of books -->
+    <path
+        android:fillColor="@color/amber_400"
+        android:pathData="M25,40 L70,40 L70,50 L25,50 Z"/>
+
+    <path
+        android:fillColor="@color/amber_500"
+        android:pathData="M30,30 L65,30 L65,40 L30,40 Z"/>
+
+    <path
+        android:fillColor="@color/amber_300"
+        android:pathData="M28,50 L72,50 L72,60 L28,60 Z"/>
+
+    <!-- Open book -->
+    <path
+        android:fillColor="@color/orange_100"
+        android:pathData="M35,20 L48,15 L48,30 L35,35 Z"/>
+
+    <path
+        android:fillColor="@color/orange_200"
+        android:pathData="M48,15 L61,20 L61,35 L48,30 Z"/>
+</vector>
