@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Amber theme colors matching the web version -->
+    <color name="amber_50">#FFFBF5</color>
+    <color name="amber_100">#FEF3E2</color>
+    <color name="amber_200">#FDE4C5</color>
+    <color name="amber_300">#FCD49D</color>
+    <color name="amber_400">#FBB360</color>
+    <color name="amber_500">#F59E0B</color>
+    <color name="amber_600">#D97706</color>
+    <color name="amber_700">#B45309</color>
+    <color name="amber_800">#92400E</color>
+    <color name="amber_900">#78350F</color>
+
+    <!-- Orange colors -->
+    <color name="orange_50">#FFF7ED</color>
+    <color name="orange_100">#FFEDD5</color>
+    <color name="orange_200">#FED7AA</color>
+
+    <!-- Background gradient colors -->
+    <color name="gradient_start">#FFFBF5</color>
+    <color name="gradient_end">#FFF7ED</color>
+
+    <!-- UI element colors -->
+    <color name="card_background">#FFFEFB</color>
+    <color name="button_primary">#B45309</color>
+    <color name="button_primary_pressed">#92400E</color>
+    <color name="text_primary">#78350F</color>
+    <color name="text_secondary">#B45309</color>
+    <color name="text_tertiary">#D97706</color>
+    <color name="text_light">#F59E0B</color>
+
+    <!-- Star colors -->
+    <color name="star_filled">#FBB360</color>
+    <color name="star_empty">#FED7AA</color>
+
+    <!-- Delete button -->
+    <color name="red_600">#DC2626</color>
+    <color name="red_800">#991B1B</color>
+    <color name="red_100">#FEE2E2</color>
+
+    <!-- White -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
