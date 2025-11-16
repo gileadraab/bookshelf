@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bookshelf</string>
+
+    <!-- Main Screen -->
+    <string name="app_title">Bookshelf</string>
+    <string name="subtitle">Keep track of your literary journey</string>
+    <string name="add_first_book">Add Your First Book</string>
+    <string name="add_new_book">Add New Book</string>
+    <string name="no_books_yet">No books yet</string>
+    <string name="start_building">Start building your reading collection!</string>
+
+    <!-- Book Card -->
+    <string name="by_author">by %s</string>
+    <string name="rating_format">%d/10</string>
+    <string name="added_date">Added %s</string>
+
+    <!-- Add/Edit Book Dialog -->
+    <string name="add_book_title">Add New Book</string>
+    <string name="edit_book_title">Edit Book</string>
+    <string name="book_title_label">Book Title *</string>
+    <string name="book_title_hint">Enter book title</string>
+    <string name="author_label">Author *</string>
+    <string name="author_hint">Enter author name</string>
+    <string name="rating_label">Rating (0-10)</string>
+    <string name="rating_selected">Selected: %d/10</string>
+    <string name="comments_label">Comments</string>
+    <string name="comments_hint">Your thoughts about this book…</string>
+    <string name="add_book_button">Add Book</string>
+    <string name="save_changes_button">Save Changes</string>
+    <string name="cancel_button">Cancel</string>
+
+    <!-- Book Detail Dialog -->
+    <string name="book_details">Book Details</string>
+    <string name="edit_button">Edit</string>
+    <string name="delete_button">Delete</string>
+    <string name="close_button">Close</string>
+
+    <!-- Delete Confirmation -->
+    <string name="delete_confirmation_title">Delete Book</string>
+    <string name="delete_confirmation_message">Are you sure you want to delete this book?</string>
+    <string name="delete_confirm">Delete</string>
+
+    <!-- Validation -->
+    <string name="error_title_required">Please enter a book title</string>
+    <string name="error_author_required">Please enter an author name</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_close">Close</string>
+    <string name="cd_edit">Edit</string>
+    <string name="cd_delete">Delete</string>
+    <string name="cd_add">Add</string>
+    <string name="cd_star">Star</string>
+    <string name="cd_empty_illustration">Empty bookshelf illustration</string>
+    <string name="cd_book_illustration">Book illustration</string>
+</resources>
