@@ -1,4 +1,7 @@
-![Logo](public/images/Bookshelf.png)
+<div align="center">
+   
+![Logo](public/images/bookshelf-removedbg.png)
+</div>
 
 # Bookshelf - Android Reading Tracker
 
